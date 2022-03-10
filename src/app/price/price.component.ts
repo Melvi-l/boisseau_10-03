@@ -23,7 +23,7 @@ export class PriceComponent implements OnInit {
       symbol: "ETH",
       price: 2603.92,
       market: 1548.90,
-      chg: 5
+      chg: 5.54
     },
     {
       src: "tether.svg",
@@ -45,9 +45,17 @@ export class PriceComponent implements OnInit {
       src: "usd_coin.png",
       name: "USD Coin",
       symbol: "USDC",
-      price: 39183.82,
-      market: 1211.90,
-      chg: -6.51
+      price: 0.999,
+      market: 52346.90,
+      chg: 0.4
+    },
+    {
+      src: "terra.png",
+      name: "Terra",
+      symbol: "LUNA",
+      price: 101.09,
+      market: 35213.917,
+      chg: 0.4
     },
   ]
 
