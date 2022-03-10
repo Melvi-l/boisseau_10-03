@@ -1,0 +1,27 @@
+<div class="item">
+    <div class="item__rank">
+        {{ rank }}
+    </div>
+    <div class="item__info">
+        <img class="item__info__logo" src='{{ "assets/" + src }}' alt="">
+        <div class="item__info__name">{{ name }}</div>
+        <div class="item__info__symbol">{{ symbol }}</div>
+    </div>
+    <div class="item__price">
+        <div class="item__price__dollar">
+            $
+        </div>
+        <div class="item__price__number">
+            {{ price }}
+        </div>
+    </div>
+    <div class="item__market">
+        {{ market }}
+    </div>
+    <div class="item__chg">
+        <svg class="item__chg__triangle" viewBox="0 0 17 13" fill="none" [style.transform]="triangleRotate">
+            <path d="M8.5 13L0 0H17L8.5 13Z" [attr.fill]="triangleColor"/>
+        </svg>
+        <div class="item__chg__number"></div>
+    </div>
+</div>
