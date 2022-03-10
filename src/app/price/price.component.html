@@ -9,6 +9,15 @@
     </div>
     <div class="price__item">
         <price-item
+            *ngFor="let item of items; let index = index"
+            [rank]="index+1"
+            [src]="item.src"
+            [name]="item.name"
+            [symbol]="item.symbol"
+            [price]="item.price"
+            [market]="item.market"
+            [chg]="item.chg"
+
 
         ></price-item>
     </div>

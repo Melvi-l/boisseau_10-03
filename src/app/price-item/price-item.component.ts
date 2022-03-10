@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'price-item',
@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./price-item.component.scss']
 })
 export class PriceItemComponent implements OnInit {
-  rank: number = 1;
-  src: string = "bitcoin.png";
-  name: string = "Bitcoin";
-  symbol: string = "BTC";
-  price: number = 39183.82
-  market: number = 1211.90
-  chg: number = -6.51
+  @Input() rank: number = 1;
+  @Input() src: string = "bitcoin.png";
+  @Input() name: string = "Bitcoin";
+  @Input() symbol: string = "BTC";
+  @Input() price: number = 39183.82
+  @Input() market: number = 1211.90
+  @Input() chg: number = -6.51
   get triangleColor(): string {
     if (this.chg>0) {
       return "#60A042"
