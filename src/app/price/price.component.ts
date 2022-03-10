@@ -8,6 +8,10 @@ import { PriceItemComponent } from '../price-item/price-item.component';
 })
 export class PriceComponent implements OnInit {
 
+  // items: = [ 
+
+  // ]
+
   constructor() { }
 
   ngOnInit(): void {

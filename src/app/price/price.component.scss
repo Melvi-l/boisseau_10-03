@@ -1,9 +1,30 @@
 .price {
     height: 84vh;
-    padding: 3vh 2vw;
-    &__market {
+    width: 100%;
+    &__info {
+        padding: 3vh 2vw;
         color: #f1f1f1;
-        font-size: 2.4vw ;
-        font-weight: 700;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        font-size: 1.6vw;
+        font-weight: 300;
+        &__market {
+            font-size: 2.4vw ;
+            font-weight: 700;
+            flex: 8;
+        }
+        &__price {
+            flex: 5
+        }
+        &__market-cap {
+            flex: 5
+        }
+        &__chg {
+            flex: 2
+        }
+    }
+    &__item {
+        padding: 0 2vw;
     }
 }

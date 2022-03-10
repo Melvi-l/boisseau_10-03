@@ -1,3 +1,72 @@
-.d {
-    color: #f1f1f1
+.item {
+    background: #2B2B2B;
+    height: 10vh;
+    color: #F1F1F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__rank {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5vw;
+        opacity: .8;
+    }
+    &__info {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex: 7;
+        &__logo {
+            height: 60%;
+        }
+        &__name {
+            margin: 1vw;
+            font-size: 2vw;
+        }
+        &__symbol {
+            margin: .1vw;
+            font-size: 2vw;
+            font-weight: 200;
+            opacity: .8;
+        }
+    }
+    &__price {
+        display: flex;
+        font-size: 1.6vw;
+        flex: 5;
+        &__dollar {
+            opacity: .8;
+            font-weight: 200;
+        }
+        &__number {
+            font-weight: 700;
+        }
+    }
+    &__market {
+        display: flex;
+        font-size: 1.6vw;
+        flex: 5;
+        &__dollar {
+            opacity: .8;
+            font-weight: 200;
+        }
+        &__number {
+            font-weight: 400;
+        }
+    }
+    &__chg {
+        height: 100%;
+        flex: 2;
+        display: flex;
+        align-items: center;
+        &__triangle {
+            height: 25%;
+        }
+        &__number {
+            font-size: 2.2vw;
+            font-weight: 200;
+        }
+    }
 }
